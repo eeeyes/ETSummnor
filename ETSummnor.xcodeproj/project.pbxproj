@@ -7,32 +7,172 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B70871BC1CF5449B0051AC6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B70871BB1CF5449B0051AC6D /* main.m */; };
-		B70871BF1CF5449B0051AC6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B70871BE1CF5449B0051AC6D /* AppDelegate.m */; };
-		B70871C21CF5449B0051AC6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70871C11CF5449B0051AC6D /* ViewController.m */; };
-		B70871C51CF5449B0051AC6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70871C31CF5449B0051AC6D /* Main.storyboard */; };
-		B70871C71CF5449B0051AC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70871C61CF5449B0051AC6D /* Assets.xcassets */; };
-		B70871CA1CF5449B0051AC6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70871C81CF5449B0051AC6D /* LaunchScreen.storyboard */; };
+		B708737A1CF578060051AC6D /* closures.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873611CF578060051AC6D /* closures.c */; };
+		B708737B1CF578060051AC6D /* dlmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873621CF578060051AC6D /* dlmalloc.c */; };
+		B708737C1CF578060051AC6D /* ffi64_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873641CF578060051AC6D /* ffi64_x86_64.c */; };
+		B708737D1CF578060051AC6D /* ffi_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873651CF578060051AC6D /* ffi_arm64.c */; };
+		B708737E1CF578060051AC6D /* ffiw64_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873701CF578060051AC6D /* ffiw64_x86_64.c */; };
+		B708737F1CF578060051AC6D /* java_raw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873741CF578060051AC6D /* java_raw_api.c */; };
+		B70873801CF578060051AC6D /* prep_cif.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873751CF578060051AC6D /* prep_cif.c */; };
+		B70873811CF578060051AC6D /* raw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873761CF578060051AC6D /* raw_api.c */; };
+		B70873821CF578060051AC6D /* sysv_arm64.S in Sources */ = {isa = PBXBuildFile; fileRef = B70873771CF578060051AC6D /* sysv_arm64.S */; };
+		B70873831CF578060051AC6D /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = B70873781CF578060051AC6D /* types.c */; };
+		B70873841CF578060051AC6D /* unix64_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = B70873791CF578060051AC6D /* unix64_x86_64.S */; };
+		B70873A01CF57E230051AC6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B708739F1CF57E230051AC6D /* main.m */; };
+		B70873A31CF57E230051AC6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873A21CF57E230051AC6D /* AppDelegate.m */; };
+		B70873A61CF57E230051AC6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873A51CF57E230051AC6D /* ViewController.m */; };
+		B70873A91CF57E230051AC6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70873A71CF57E230051AC6D /* Main.storyboard */; };
+		B70873AB1CF57E230051AC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70873AA1CF57E230051AC6D /* Assets.xcassets */; };
+		B70873AE1CF57E230051AC6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70873AC1CF57E230051AC6D /* LaunchScreen.storyboard */; };
+		B70873CA1CF57E8D0051AC6D /* ETSummoner.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873C11CF57E8D0051AC6D /* ETSummoner.m */; };
+		B70873CB1CF57E8D0051AC6D /* ETBlockSummoner.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873C31CF57E8D0051AC6D /* ETBlockSummoner.m */; };
+		B70873CC1CF57E8D0051AC6D /* ETClassSummoner.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873C51CF57E8D0051AC6D /* ETClassSummoner.m */; };
+		B70873CD1CF57E8D0051AC6D /* ETSummonerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873C71CF57E8D0051AC6D /* ETSummonerTest.m */; };
+		B70873CE1CF57E8D0051AC6D /* ETJSSummoner.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873C91CF57E8D0051AC6D /* ETJSSummoner.m */; };
+		B70873D11CF57EB10051AC6D /* JRTypeEncodeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873D01CF57EB10051AC6D /* JRTypeEncodeParser.m */; };
+		B70873D41CF57F160051AC6D /* JSRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873D31CF57F160051AC6D /* JSRunner.m */; };
+		B70873D81CF5802D0051AC6D /* ETJSCollectionViewController.js in Resources */ = {isa = PBXBuildFile; fileRef = B70873D71CF5802D0051AC6D /* ETJSCollectionViewController.js */; };
+		B70873DA1CF5848D0051AC6D /* ETJSViewController.js in Resources */ = {isa = PBXBuildFile; fileRef = B70873D91CF5848D0051AC6D /* ETJSViewController.js */; };
+		B70873DE1CF5867B0051AC6D /* testBuildUI.js in Resources */ = {isa = PBXBuildFile; fileRef = B70873DB1CF5867B0051AC6D /* testBuildUI.js */; };
+		B70873DF1CF5867B0051AC6D /* testSort.js in Resources */ = {isa = PBXBuildFile; fileRef = B70873DC1CF5867B0051AC6D /* testSort.js */; };
+		B70873E41CF58D0C0051AC6D /* ETTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873E31CF58D0C0051AC6D /* ETTestViewController.m */; };
+		B70873E71CF58E3F0051AC6D /* ETTestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70873E61CF58E3F0051AC6D /* ETTestCollectionViewController.m */; };
+		B70873EE1CF5CDE10051AC6D /* libETSummnor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B70873B71CF57E6F0051AC6D /* libETSummnor.a */; };
+		B70873F61CF687700051AC6D /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B708730E1CF55CDB0051AC6D /* libffi.a */; };
+		B74AEA6A1CF7DAF600450FE3 /* ffi_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = B74AEA631CF7DAF600450FE3 /* ffi_arm.c */; };
+		B74AEA6B1CF7DAF600450FE3 /* sysv_arm.S in Sources */ = {isa = PBXBuildFile; fileRef = B74AEA661CF7DAF600450FE3 /* sysv_arm.S */; };
+		B74AEA6C1CF7DAF600450FE3 /* trampoline_arm.S in Sources */ = {isa = PBXBuildFile; fileRef = B74AEA681CF7DAF600450FE3 /* trampoline_arm.S */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B70873F21CF687650051AC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70871AF1CF5449B0051AC6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B70873B61CF57E6F0051AC6D;
+			remoteInfo = ETSummnor;
+		};
+		B70873F41CF6876D0051AC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70871AF1CF5449B0051AC6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B708730D1CF55CDB0051AC6D;
+			remoteInfo = ffi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B708730C1CF55CDB0051AC6D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70873B51CF57E6F0051AC6D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		B70871B71CF5449B0051AC6D /* ETSummnor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETSummnor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B70871BB1CF5449B0051AC6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B70871BD1CF5449B0051AC6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B70871BE1CF5449B0051AC6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B70871C01CF5449B0051AC6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B70871C11CF5449B0051AC6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B70871C41CF5449B0051AC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B70871C61CF5449B0051AC6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B70871C91CF5449B0051AC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B70871CB1CF5449B0051AC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B708730E1CF55CDB0051AC6D /* libffi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libffi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70873601CF578060051AC6D /* asmnames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asmnames.h; sourceTree = "<group>"; };
+		B70873611CF578060051AC6D /* closures.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = closures.c; sourceTree = "<group>"; };
+		B70873621CF578060051AC6D /* dlmalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dlmalloc.c; sourceTree = "<group>"; };
+		B70873631CF578060051AC6D /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		B70873641CF578060051AC6D /* ffi64_x86_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi64_x86_64.c; sourceTree = "<group>"; };
+		B70873651CF578060051AC6D /* ffi_arm64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi_arm64.c; sourceTree = "<group>"; };
+		B70873661CF578060051AC6D /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
+		B70873671CF578060051AC6D /* ffi_cfi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_cfi.h; sourceTree = "<group>"; };
+		B70873681CF578060051AC6D /* ffi_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_common.h; sourceTree = "<group>"; };
+		B70873691CF578060051AC6D /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
+		B708736A1CF578060051AC6D /* fficonfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig.h; sourceTree = "<group>"; };
+		B708736B1CF578060051AC6D /* fficonfig_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_arm64.h; sourceTree = "<group>"; };
+		B708736C1CF578060051AC6D /* fficonfig_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_x86_64.h; sourceTree = "<group>"; };
+		B708736D1CF578060051AC6D /* ffitarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		B708736E1CF578060051AC6D /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
+		B708736F1CF578060051AC6D /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
+		B70873701CF578060051AC6D /* ffiw64_x86_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffiw64_x86_64.c; sourceTree = "<group>"; };
+		B70873711CF578060051AC6D /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		B70873721CF578060051AC6D /* internal_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal_arm64.h; sourceTree = "<group>"; };
+		B70873731CF578060051AC6D /* internal_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal_x86_64.h; sourceTree = "<group>"; };
+		B70873741CF578060051AC6D /* java_raw_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = java_raw_api.c; sourceTree = "<group>"; };
+		B70873751CF578060051AC6D /* prep_cif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prep_cif.c; sourceTree = "<group>"; };
+		B70873761CF578060051AC6D /* raw_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = raw_api.c; sourceTree = "<group>"; };
+		B70873771CF578060051AC6D /* sysv_arm64.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sysv_arm64.S; sourceTree = "<group>"; };
+		B70873781CF578060051AC6D /* types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = types.c; sourceTree = "<group>"; };
+		B70873791CF578060051AC6D /* unix64_x86_64.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = unix64_x86_64.S; sourceTree = "<group>"; };
+		B708739C1CF57E230051AC6D /* ETSummnorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETSummnorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B708739F1CF57E230051AC6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B70873A11CF57E230051AC6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B70873A21CF57E230051AC6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B70873A41CF57E230051AC6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B70873A51CF57E230051AC6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B70873A81CF57E230051AC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B70873AA1CF57E230051AC6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B70873AD1CF57E230051AC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B70873AF1CF57E230051AC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B70873B71CF57E6F0051AC6D /* libETSummnor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libETSummnor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70873C01CF57E8D0051AC6D /* ETSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSummoner.h; sourceTree = "<group>"; };
+		B70873C11CF57E8D0051AC6D /* ETSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSummoner.m; sourceTree = "<group>"; };
+		B70873C21CF57E8D0051AC6D /* ETBlockSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETBlockSummoner.h; sourceTree = "<group>"; };
+		B70873C31CF57E8D0051AC6D /* ETBlockSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETBlockSummoner.m; sourceTree = "<group>"; };
+		B70873C41CF57E8D0051AC6D /* ETClassSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETClassSummoner.h; sourceTree = "<group>"; };
+		B70873C51CF57E8D0051AC6D /* ETClassSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETClassSummoner.m; sourceTree = "<group>"; };
+		B70873C61CF57E8D0051AC6D /* ETSummonerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSummonerTest.h; sourceTree = "<group>"; };
+		B70873C71CF57E8D0051AC6D /* ETSummonerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSummonerTest.m; sourceTree = "<group>"; };
+		B70873C81CF57E8D0051AC6D /* ETJSSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETJSSummoner.h; sourceTree = "<group>"; };
+		B70873C91CF57E8D0051AC6D /* ETJSSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETJSSummoner.m; sourceTree = "<group>"; };
+		B70873CF1CF57EB10051AC6D /* JRTypeEncodeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTypeEncodeParser.h; sourceTree = "<group>"; };
+		B70873D01CF57EB10051AC6D /* JRTypeEncodeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTypeEncodeParser.m; sourceTree = "<group>"; };
+		B70873D21CF57F160051AC6D /* JSRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRunner.h; sourceTree = "<group>"; };
+		B70873D31CF57F160051AC6D /* JSRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRunner.m; sourceTree = "<group>"; };
+		B70873D71CF5802D0051AC6D /* ETJSCollectionViewController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ETJSCollectionViewController.js; sourceTree = "<group>"; };
+		B70873D91CF5848D0051AC6D /* ETJSViewController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ETJSViewController.js; sourceTree = "<group>"; };
+		B70873DB1CF5867B0051AC6D /* testBuildUI.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = testBuildUI.js; sourceTree = "<group>"; };
+		B70873DC1CF5867B0051AC6D /* testSort.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = testSort.js; sourceTree = "<group>"; };
+		B70873E21CF58D0C0051AC6D /* ETTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTestViewController.h; sourceTree = "<group>"; };
+		B70873E31CF58D0C0051AC6D /* ETTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTestViewController.m; sourceTree = "<group>"; };
+		B70873E51CF58E3F0051AC6D /* ETTestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTestCollectionViewController.h; sourceTree = "<group>"; };
+		B70873E61CF58E3F0051AC6D /* ETTestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTestCollectionViewController.m; sourceTree = "<group>"; };
+		B74AEA631CF7DAF600450FE3 /* ffi_arm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi_arm.c; sourceTree = "<group>"; };
+		B74AEA641CF7DAF600450FE3 /* ffitarget_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm.h; sourceTree = "<group>"; };
+		B74AEA651CF7DAF600450FE3 /* internal_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal_arm.h; sourceTree = "<group>"; };
+		B74AEA661CF7DAF600450FE3 /* sysv_arm.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sysv_arm.S; sourceTree = "<group>"; };
+		B74AEA671CF7DAF600450FE3 /* fficonfig_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_arm.h; sourceTree = "<group>"; };
+		B74AEA681CF7DAF600450FE3 /* trampoline_arm.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = trampoline_arm.S; sourceTree = "<group>"; };
+		B74AEA691CF7DAF600450FE3 /* ffi_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B70871B41CF5449B0051AC6D /* Frameworks */ = {
+		B708730B1CF55CDB0051AC6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70873991CF57E230051AC6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70873EE1CF5CDE10051AC6D /* libETSummnor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70873B41CF57E6F0051AC6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70873F61CF687700051AC6D /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +182,9 @@
 		B70871AE1CF5449B0051AC6D = {
 			isa = PBXGroup;
 			children = (
-				B70871B91CF5449B0051AC6D /* ETSummnor */,
+				B708735F1CF578060051AC6D /* libffi */,
+				B70873B81CF57E6F0051AC6D /* ETSummnor */,
+				B708739D1CF57E230051AC6D /* ETSummnorDemo */,
 				B70871B81CF5449B0051AC6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,54 +192,169 @@
 		B70871B81CF5449B0051AC6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B70871B71CF5449B0051AC6D /* ETSummnor.app */,
+				B708730E1CF55CDB0051AC6D /* libffi.a */,
+				B708739C1CF57E230051AC6D /* ETSummnorDemo.app */,
+				B70873B71CF57E6F0051AC6D /* libETSummnor.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B70871B91CF5449B0051AC6D /* ETSummnor */ = {
+		B708735F1CF578060051AC6D /* libffi */ = {
 			isa = PBXGroup;
 			children = (
-				B70871BD1CF5449B0051AC6D /* AppDelegate.h */,
-				B70871BE1CF5449B0051AC6D /* AppDelegate.m */,
-				B70871C01CF5449B0051AC6D /* ViewController.h */,
-				B70871C11CF5449B0051AC6D /* ViewController.m */,
-				B70871C31CF5449B0051AC6D /* Main.storyboard */,
-				B70871C61CF5449B0051AC6D /* Assets.xcassets */,
-				B70871C81CF5449B0051AC6D /* LaunchScreen.storyboard */,
-				B70871CB1CF5449B0051AC6D /* Info.plist */,
-				B70871BA1CF5449B0051AC6D /* Supporting Files */,
+				B74AEA631CF7DAF600450FE3 /* ffi_arm.c */,
+				B74AEA641CF7DAF600450FE3 /* ffitarget_arm.h */,
+				B74AEA651CF7DAF600450FE3 /* internal_arm.h */,
+				B74AEA661CF7DAF600450FE3 /* sysv_arm.S */,
+				B74AEA671CF7DAF600450FE3 /* fficonfig_arm.h */,
+				B74AEA681CF7DAF600450FE3 /* trampoline_arm.S */,
+				B74AEA691CF7DAF600450FE3 /* ffi_arm.h */,
+				B70873601CF578060051AC6D /* asmnames.h */,
+				B70873611CF578060051AC6D /* closures.c */,
+				B70873621CF578060051AC6D /* dlmalloc.c */,
+				B70873631CF578060051AC6D /* ffi.h */,
+				B70873641CF578060051AC6D /* ffi64_x86_64.c */,
+				B70873651CF578060051AC6D /* ffi_arm64.c */,
+				B70873661CF578060051AC6D /* ffi_arm64.h */,
+				B70873671CF578060051AC6D /* ffi_cfi.h */,
+				B70873681CF578060051AC6D /* ffi_common.h */,
+				B70873691CF578060051AC6D /* ffi_x86_64.h */,
+				B708736A1CF578060051AC6D /* fficonfig.h */,
+				B708736B1CF578060051AC6D /* fficonfig_arm64.h */,
+				B708736C1CF578060051AC6D /* fficonfig_x86_64.h */,
+				B708736D1CF578060051AC6D /* ffitarget.h */,
+				B708736E1CF578060051AC6D /* ffitarget_arm64.h */,
+				B708736F1CF578060051AC6D /* ffitarget_x86_64.h */,
+				B70873701CF578060051AC6D /* ffiw64_x86_64.c */,
+				B70873711CF578060051AC6D /* internal.h */,
+				B70873721CF578060051AC6D /* internal_arm64.h */,
+				B70873731CF578060051AC6D /* internal_x86_64.h */,
+				B70873741CF578060051AC6D /* java_raw_api.c */,
+				B70873751CF578060051AC6D /* prep_cif.c */,
+				B70873761CF578060051AC6D /* raw_api.c */,
+				B70873771CF578060051AC6D /* sysv_arm64.S */,
+				B70873781CF578060051AC6D /* types.c */,
+				B70873791CF578060051AC6D /* unix64_x86_64.S */,
+			);
+			path = libffi;
+			sourceTree = "<group>";
+		};
+		B708739D1CF57E230051AC6D /* ETSummnorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B70873E11CF589360051AC6D /* js */,
+				B70873A11CF57E230051AC6D /* AppDelegate.h */,
+				B70873A21CF57E230051AC6D /* AppDelegate.m */,
+				B70873E21CF58D0C0051AC6D /* ETTestViewController.h */,
+				B70873E31CF58D0C0051AC6D /* ETTestViewController.m */,
+				B70873E51CF58E3F0051AC6D /* ETTestCollectionViewController.h */,
+				B70873E61CF58E3F0051AC6D /* ETTestCollectionViewController.m */,
+				B70873A41CF57E230051AC6D /* ViewController.h */,
+				B70873A51CF57E230051AC6D /* ViewController.m */,
+				B70873A71CF57E230051AC6D /* Main.storyboard */,
+				B70873AA1CF57E230051AC6D /* Assets.xcassets */,
+				B70873AC1CF57E230051AC6D /* LaunchScreen.storyboard */,
+				B70873AF1CF57E230051AC6D /* Info.plist */,
+				B708739E1CF57E230051AC6D /* Supporting Files */,
+			);
+			path = ETSummnorDemo;
+			sourceTree = "<group>";
+		};
+		B708739E1CF57E230051AC6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B708739F1CF57E230051AC6D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B70873B81CF57E6F0051AC6D /* ETSummnor */ = {
+			isa = PBXGroup;
+			children = (
+				B70873C01CF57E8D0051AC6D /* ETSummoner.h */,
+				B70873C11CF57E8D0051AC6D /* ETSummoner.m */,
+				B70873C21CF57E8D0051AC6D /* ETBlockSummoner.h */,
+				B70873C31CF57E8D0051AC6D /* ETBlockSummoner.m */,
+				B70873C41CF57E8D0051AC6D /* ETClassSummoner.h */,
+				B70873C51CF57E8D0051AC6D /* ETClassSummoner.m */,
+				B70873C61CF57E8D0051AC6D /* ETSummonerTest.h */,
+				B70873C71CF57E8D0051AC6D /* ETSummonerTest.m */,
+				B70873C81CF57E8D0051AC6D /* ETJSSummoner.h */,
+				B70873C91CF57E8D0051AC6D /* ETJSSummoner.m */,
+				B70873CF1CF57EB10051AC6D /* JRTypeEncodeParser.h */,
+				B70873D01CF57EB10051AC6D /* JRTypeEncodeParser.m */,
+				B70873D21CF57F160051AC6D /* JSRunner.h */,
+				B70873D31CF57F160051AC6D /* JSRunner.m */,
 			);
 			path = ETSummnor;
 			sourceTree = "<group>";
 		};
-		B70871BA1CF5449B0051AC6D /* Supporting Files */ = {
+		B70873E11CF589360051AC6D /* js */ = {
 			isa = PBXGroup;
 			children = (
-				B70871BB1CF5449B0051AC6D /* main.m */,
+				B70873D91CF5848D0051AC6D /* ETJSViewController.js */,
+				B70873D71CF5802D0051AC6D /* ETJSCollectionViewController.js */,
+				B70873DB1CF5867B0051AC6D /* testBuildUI.js */,
+				B70873DC1CF5867B0051AC6D /* testSort.js */,
 			);
-			name = "Supporting Files";
+			name = js;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B70871B61CF5449B0051AC6D /* ETSummnor */ = {
+		B708730D1CF55CDB0051AC6D /* ffi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B70871CE1CF5449B0051AC6D /* Build configuration list for PBXNativeTarget "ETSummnor" */;
+			buildConfigurationList = B70873161CF55CDC0051AC6D /* Build configuration list for PBXNativeTarget "ffi" */;
 			buildPhases = (
-				B70871B31CF5449B0051AC6D /* Sources */,
-				B70871B41CF5449B0051AC6D /* Frameworks */,
-				B70871B51CF5449B0051AC6D /* Resources */,
+				B708730A1CF55CDB0051AC6D /* Sources */,
+				B708730B1CF55CDB0051AC6D /* Frameworks */,
+				B708730C1CF55CDB0051AC6D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = ffi;
+			productName = "libffi-arm64";
+			productReference = B708730E1CF55CDB0051AC6D /* libffi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B708739B1CF57E230051AC6D /* ETSummnorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70873B01CF57E230051AC6D /* Build configuration list for PBXNativeTarget "ETSummnorDemo" */;
+			buildPhases = (
+				B70873981CF57E230051AC6D /* Sources */,
+				B70873991CF57E230051AC6D /* Frameworks */,
+				B708739A1CF57E230051AC6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B70873F31CF687650051AC6D /* PBXTargetDependency */,
+			);
+			name = ETSummnorDemo;
+			productName = ETSummnorDemo;
+			productReference = B708739C1CF57E230051AC6D /* ETSummnorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B70873B61CF57E6F0051AC6D /* ETSummnor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70873BD1CF57E700051AC6D /* Build configuration list for PBXNativeTarget "ETSummnor" */;
+			buildPhases = (
+				B70873B31CF57E6F0051AC6D /* Sources */,
+				B70873B41CF57E6F0051AC6D /* Frameworks */,
+				B70873B51CF57E6F0051AC6D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B70873F51CF6876D0051AC6D /* PBXTargetDependency */,
+			);
 			name = ETSummnor;
 			productName = ETSummnor;
-			productReference = B70871B71CF5449B0051AC6D /* ETSummnor.app */;
-			productType = "com.apple.product-type.application";
+			productReference = B70873B71CF57E6F0051AC6D /* libETSummnor.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -108,7 +365,13 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = chaoran;
 				TargetAttributes = {
-					B70871B61CF5449B0051AC6D = {
+					B708730D1CF55CDB0051AC6D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					B708739B1CF57E230051AC6D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					B70873B61CF57E6F0051AC6D = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -126,50 +389,106 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B70871B61CF5449B0051AC6D /* ETSummnor */,
+				B708730D1CF55CDB0051AC6D /* ffi */,
+				B708739B1CF57E230051AC6D /* ETSummnorDemo */,
+				B70873B61CF57E6F0051AC6D /* ETSummnor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B70871B51CF5449B0051AC6D /* Resources */ = {
+		B708739A1CF57E230051AC6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70871CA1CF5449B0051AC6D /* LaunchScreen.storyboard in Resources */,
-				B70871C71CF5449B0051AC6D /* Assets.xcassets in Resources */,
-				B70871C51CF5449B0051AC6D /* Main.storyboard in Resources */,
+				B70873AE1CF57E230051AC6D /* LaunchScreen.storyboard in Resources */,
+				B70873DF1CF5867B0051AC6D /* testSort.js in Resources */,
+				B70873D81CF5802D0051AC6D /* ETJSCollectionViewController.js in Resources */,
+				B70873AB1CF57E230051AC6D /* Assets.xcassets in Resources */,
+				B70873DA1CF5848D0051AC6D /* ETJSViewController.js in Resources */,
+				B70873A91CF57E230051AC6D /* Main.storyboard in Resources */,
+				B70873DE1CF5867B0051AC6D /* testBuildUI.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B70871B31CF5449B0051AC6D /* Sources */ = {
+		B708730A1CF55CDB0051AC6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70871C21CF5449B0051AC6D /* ViewController.m in Sources */,
-				B70871BF1CF5449B0051AC6D /* AppDelegate.m in Sources */,
-				B70871BC1CF5449B0051AC6D /* main.m in Sources */,
+				B708737E1CF578060051AC6D /* ffiw64_x86_64.c in Sources */,
+				B74AEA6A1CF7DAF600450FE3 /* ffi_arm.c in Sources */,
+				B708737A1CF578060051AC6D /* closures.c in Sources */,
+				B70873841CF578060051AC6D /* unix64_x86_64.S in Sources */,
+				B708737B1CF578060051AC6D /* dlmalloc.c in Sources */,
+				B70873831CF578060051AC6D /* types.c in Sources */,
+				B708737F1CF578060051AC6D /* java_raw_api.c in Sources */,
+				B708737D1CF578060051AC6D /* ffi_arm64.c in Sources */,
+				B74AEA6C1CF7DAF600450FE3 /* trampoline_arm.S in Sources */,
+				B70873811CF578060051AC6D /* raw_api.c in Sources */,
+				B74AEA6B1CF7DAF600450FE3 /* sysv_arm.S in Sources */,
+				B708737C1CF578060051AC6D /* ffi64_x86_64.c in Sources */,
+				B70873801CF578060051AC6D /* prep_cif.c in Sources */,
+				B70873821CF578060051AC6D /* sysv_arm64.S in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70873981CF57E230051AC6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70873A61CF57E230051AC6D /* ViewController.m in Sources */,
+				B70873E41CF58D0C0051AC6D /* ETTestViewController.m in Sources */,
+				B70873E71CF58E3F0051AC6D /* ETTestCollectionViewController.m in Sources */,
+				B70873A31CF57E230051AC6D /* AppDelegate.m in Sources */,
+				B70873A01CF57E230051AC6D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70873B31CF57E6F0051AC6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70873CB1CF57E8D0051AC6D /* ETBlockSummoner.m in Sources */,
+				B70873D41CF57F160051AC6D /* JSRunner.m in Sources */,
+				B70873CC1CF57E8D0051AC6D /* ETClassSummoner.m in Sources */,
+				B70873D11CF57EB10051AC6D /* JRTypeEncodeParser.m in Sources */,
+				B70873CD1CF57E8D0051AC6D /* ETSummonerTest.m in Sources */,
+				B70873CE1CF57E8D0051AC6D /* ETJSSummoner.m in Sources */,
+				B70873CA1CF57E8D0051AC6D /* ETSummoner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B70873F31CF687650051AC6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B70873B61CF57E6F0051AC6D /* ETSummnor */;
+			targetProxy = B70873F21CF687650051AC6D /* PBXContainerItemProxy */;
+		};
+		B70873F51CF6876D0051AC6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B708730D1CF55CDB0051AC6D /* ffi */;
+			targetProxy = B70873F41CF6876D0051AC6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		B70871C31CF5449B0051AC6D /* Main.storyboard */ = {
+		B70873A71CF57E230051AC6D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B70871C41CF5449B0051AC6D /* Base */,
+				B70873A81CF57E230051AC6D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B70871C81CF5449B0051AC6D /* LaunchScreen.storyboard */ = {
+		B70873AC1CF57E230051AC6D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B70871C91CF5449B0051AC6D /* Base */,
+				B70873AD1CF57E230051AC6D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -213,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -259,25 +578,71 @@
 			};
 			name = Release;
 		};
-		B70871CF1CF5449B0051AC6D /* Debug */ = {
+		B70873141CF55CDC0051AC6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		B70873151CF55CDC0051AC6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		B70873B11CF57E230051AC6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ETSummnor/Info.plist;
+				INFOPLIST_FILE = ETSummnorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eeeyes.ETSummnor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eeeyes.ETSummnorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		B70871D01CF5449B0051AC6D /* Release */ = {
+		B70873B21CF57E230051AC6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ETSummnor/Info.plist;
+				INFOPLIST_FILE = ETSummnorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eeeyes.ETSummnor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eeeyes.ETSummnorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B70873BE1CF57E700051AC6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B70873BF1CF57E700051AC6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -293,13 +658,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B70871CE1CF5449B0051AC6D /* Build configuration list for PBXNativeTarget "ETSummnor" */ = {
+		B70873161CF55CDC0051AC6D /* Build configuration list for PBXNativeTarget "ffi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B70871CF1CF5449B0051AC6D /* Debug */,
-				B70871D01CF5449B0051AC6D /* Release */,
+				B70873141CF55CDC0051AC6D /* Debug */,
+				B70873151CF55CDC0051AC6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70873B01CF57E230051AC6D /* Build configuration list for PBXNativeTarget "ETSummnorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70873B11CF57E230051AC6D /* Debug */,
+				B70873B21CF57E230051AC6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70873BD1CF57E700051AC6D /* Build configuration list for PBXNativeTarget "ETSummnor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70873BE1CF57E700051AC6D /* Debug */,
+				B70873BF1CF57E700051AC6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
